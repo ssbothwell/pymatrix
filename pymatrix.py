@@ -11,7 +11,7 @@ class window:
         self.singletons = []
         # Add a border to the window
         self.win.border(0)
-        for _ in range(0, math.floor(self.cols/2)):
+        for _ in range(0, self.cols//2):
             # create a vertical string
             self.create_vert_string()
             # refresh window and wait for user input
